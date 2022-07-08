@@ -25,5 +25,9 @@ public class TransporteBus extends Transporte {
     public String obtenerCooperativaBus() {
         return cooperativaBus;
     }
-
+    
+    public String toString() {
+        String cadena = String.format("Transporte Bus: %.2f\n", tarifa );
+        return cadena;
+    }
 }

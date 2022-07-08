@@ -26,6 +26,10 @@ public class TransporteTaxi extends Transporte {
     public String obtenerCooperativaTaxi(){
         return cooperativaTaxi;
     }
-        
+       
+    public String toString() {
+        String cadena = String.format("Transporte Taxi: %.2f\n", tarifa );
+        return cadena;
+    }
     
 }
