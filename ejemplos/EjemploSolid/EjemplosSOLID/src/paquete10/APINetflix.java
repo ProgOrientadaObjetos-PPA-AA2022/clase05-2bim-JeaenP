@@ -5,8 +5,10 @@
  */
 package paquete10;
 
+import java.io.Serializable;
 
-public class APINetflix implements APIMovie{
+
+public class APINetflix implements APIMovie, Serializable{
     
     private String apiKey;
     
@@ -20,4 +22,8 @@ public class APINetflix implements APIMovie{
         return apiKey;
     }
     
+    public String toString() {
+        String cadena = String.format("Netflix");
+        return cadena;
+    }
 }

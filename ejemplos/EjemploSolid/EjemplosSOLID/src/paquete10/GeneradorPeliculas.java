@@ -5,7 +5,9 @@
  */
 package paquete10;
 
-public class GeneradorPeliculas {
+import java.io.Serializable;
+
+public class GeneradorPeliculas implements Serializable {
     
     private APIMovie llave;
     private String url;
@@ -24,6 +26,11 @@ public class GeneradorPeliculas {
     
     public String obtenerUrl(){
         return url;
+    }
+    
+    public String toString() {
+        String cadena = String.format("%s - %s",llave, url );
+        return cadena;
     }
     
 }

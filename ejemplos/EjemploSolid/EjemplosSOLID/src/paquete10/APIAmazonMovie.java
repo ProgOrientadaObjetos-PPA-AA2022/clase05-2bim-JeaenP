@@ -5,8 +5,10 @@
  */
 package paquete10;
 
+import java.io.Serializable;
 
-public class APIAmazonMovie implements APIMovie{
+
+public class APIAmazonMovie implements APIMovie, Serializable{
     
     private String apiKey;
     
@@ -18,6 +20,11 @@ public class APIAmazonMovie implements APIMovie{
     @Override
     public String obtenerApiKey(){
         return apiKey;
+    }
+    
+    public String toString() {
+        String cadena = String.format("Amazon Movie");
+        return cadena;
     }
     
 }
